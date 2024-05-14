@@ -18,6 +18,17 @@ void AlphaInString(){
         mp[ch] = count; 
     }
 
+    for (char ch{'A'}; ch <= 'Z';ch++){
+        int count = 0;
+        for (int i{0}; i < s1.length();i++){
+            if (ch == s1[i]){
+                count++;
+            }
+        }
+        // cout << count;
+        mp[ch] = count; 
+    }
+
     // cout << mp.begin()->second;
 
     map<char, int>::iterator it = mp.begin();
