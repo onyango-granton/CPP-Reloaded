@@ -1,12 +1,13 @@
+#include "printchar.h"
 #include <iostream>
 
 using namespace std;
 
 void PrintStr(string s){
     for(int i{0}; i < s.length();i++){
-        cout<<s[i];
+        Printchar(s[i]);
     }
-    cout <<endl;
+    Printchar('\n');
 }
 
 int main(){
