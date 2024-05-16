@@ -5,9 +5,9 @@ using namespace std;
 
 void PrintStr(string s){
     for(int i{0}; i < s.length();i++){
-        Printchar(s[i]);
+        PrintChar(s[i]);
     }
-    Printchar('\n');
+    PrintChar('\n');
 }
 
 int main(){
