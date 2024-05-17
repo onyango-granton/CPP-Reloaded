@@ -1,27 +1,50 @@
 #include <iostream>
+#include <vector>
 
-int* SortIntegerTable(int table[]){
-    for (int i{0}; i < sizeof(*table);i++){
-        for (int j{0}; j<sizeof(*table);j++){
-            if (j+1 < sizeof(*table) && table[j] > table[j+1]){
-                table[j], table[j+1] = table[j+1], table[j];
+using namespace std;
+
+// int* SortIntegerTable(int table[]){
+//     for (int i{0}; i < sizeof(*table);i++){
+//         for (int j{0}; j<sizeof(*table);j++){
+//             if (j+1 < sizeof(*table) && table[j] > table[j+1]){
+//                 table[j], table[j+1] = table[j+1], table[j];
+//             }
+//         }
+//     }
+//     // std::cout<<*table;
+//     for (int i{0}; i < sizeof(*table);i++){
+//         std::cout<<table[i]<<std::endl;
+//     }
+//     // cout<<table<<endl;
+//     return table;
+// }
+
+// int main() {
+//     std::vector<int> myints
+// }
+
+std::vector<int> SortIntegerTable(std::vector<int> table){
+    for (int i{0};i<table.size();i++){
+        for (int j{0}; j<table.size();j++){
+            if (j+1 < table.size() && table[j] > table[j+1]){
+                // cout<<table[j]<<"Here"<<endl;
+                int tmp = table[j];
+                table[j] = table[j+1];
+                table[j+1] = tmp;
             }
         }
     }
-    // std::cout<<*table;
     for (auto i: table){
-
+        cout <<i<<" indexed"<<endl;
     }
     return table;
 }
 
-int main() {
-    int table[] = {2,7,4,5,9,15,10};
-    SortIntegerTable(table);
-    // std::cout<<*table<<std::endl;
+int main(){
+    std::vector<int> indexes = {4,8,3,2,66,4,3};
+    std::vector<int> sortedInt = SortIntegerTable(indexes);
 
-    for (auto i: table){
-        std::cout<<i<<" ";
+    for (auto i : sortedInt){
+        cout<<i<<endl;
     }
-    std::cout<<std::endl;
 }
