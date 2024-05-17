@@ -34,9 +34,9 @@ std::vector<int> SortIntegerTable(std::vector<int> table){
             }
         }
     }
-    for (auto i: table){
-        cout <<i<<" indexed"<<endl;
-    }
+    // for (auto i: table){
+    //     cout <<i<<" indexed"<<endl;
+    // }
     return table;
 }
 
@@ -45,6 +45,7 @@ int main(){
     std::vector<int> sortedInt = SortIntegerTable(indexes);
 
     for (auto i : sortedInt){
-        cout<<i<<endl;
+        cout<<i<<" ";
     }
+    cout<<endl;
 }
