@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <vector>
 
 // template<typename T>
 // char numofElemArray(T){
@@ -67,3 +68,16 @@
 // size_t numberOfElements(T arr[], size_t size){
 
 // }
+
+using namespace std;
+
+template <typename T>
+T numberofElems(std::vector<T> arr){
+    return arr.size();
+}
+
+int main() {
+    std::vector<int> indexes = {5,6,7,22,34,8};
+    cout << numberofElems<int>(indexes);
+    return 0;
+}
