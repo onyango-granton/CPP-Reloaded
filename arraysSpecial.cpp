@@ -9,4 +9,8 @@ int main() {
         cout << i<< endl;
     }
 
+    //SizeofFunction
+    //returns in bytes size of
+    cout<<sizeof("cars");
+
 }
