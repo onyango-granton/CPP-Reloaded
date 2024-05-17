@@ -34,17 +34,36 @@
 //     cout << numOfElem(indexes);
 // }
 
-using namespace std;
+// using namespace std;
 
-template<typename T>
-T numOfElem(T arr[]){
-    int sizeArr = sizeof(*arr) / sizeof(arr[0]);
-    return sizeof(arr);
-}
+// template<typename T>
+// T numOfElem(T arr[]){
+//     int sizeArr = sizeof(*arr) / sizeof(arr[0]);
+//     return sizeof(arr);
+// }
 
-int main() {
-    int indexes[] = {9,7,3,9,5};
-    int sizeOfArr = sizeof(*indexes) / sizeof(indexes[0]);
-    cout<<numOfElem<int>(indexes)<<endl;
-    cout<<sizeOfArr<<endl;
-}
+// int main() {
+//     int indexes[] = {9,7,3,9,5};
+//     int sizeOfArr = sizeof(*indexes) / sizeof(indexes[0]);
+//     cout<<numOfElem<int>(indexes)<<endl;
+//     cout<<sizeOfArr<<endl;
+// }
+
+// using namespace std;
+
+// template <typename T>
+// T numberOfElems(T arry[]){
+//     cout<<sizeof(arry)<<endl;
+//     return 76;
+// }
+
+// int main() {
+//     int heroes[] = {5,2,3,4,7};
+//     cout<<sizeof(heroes)<<endl;
+//     cout<<numberOfElems<int>(heroes);
+// }
+
+// template <typename T>
+// size_t numberOfElements(T arr[], size_t size){
+
+// }
