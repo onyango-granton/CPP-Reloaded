@@ -32,8 +32,12 @@ int main() {
     std::vector<int> countArr(max-min + 1);
 
     for (int i{0}; i < length;i++){
-        countArr[itemsCount[i]]++;
+        countArr[itemsCount[i]-min]++;
     }
+
+    // for (int i {0}; i<countArr.size();i++){
+    //     cout<<countArr[i]<<endl;
+    // }
 
     int total {0};
 
@@ -42,6 +46,10 @@ int main() {
         countArr[i] = total;
         total = total + subTotal;
     }
+
+    // for (int i {0}; i<countArr.size();i++){
+    //     cout<<countArr[i]<<endl;
+    // }
 
     for (int i{0}; i < length; i++){
         itemsCount[countArr[items[i]-min]] = items[i];
