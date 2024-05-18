@@ -12,6 +12,7 @@ func main(){
 	items := make([]int, length)
 	copy(items,indexes)
 
+
 	max := math.MinInt32
 	min := math.MaxInt32
 
